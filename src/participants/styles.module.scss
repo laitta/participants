@@ -1,0 +1,131 @@
+.participants-page {
+  margin: 0 auto;
+  max-width: 912px + 32px * 2;
+  padding: 32px;
+
+  > h2 {
+    color: #757575;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 40px;
+    margin-top: 38px;
+  }
+
+  .horizontal-scroll {
+    overflow-x: auto;
+  }
+}
+
+.participant-table {
+  display: grid;
+  gap: 8px;
+
+  > table {
+    background: white;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .buttons {
+    display: grid;
+    gap: 24px;
+    grid-auto-columns: min-content;
+    grid-auto-flow: column;
+    justify-content: end;
+  }
+
+  .minimum-width {
+    width: 1%;
+  }
+
+  th {
+    border-bottom: 1px #eee solid;
+    padding: 16px 12px;
+    padding-bottom: 15px;
+    text-align: left;
+
+    &:first-child {
+      padding-left: 24px;
+    }
+
+    &:last-child {
+      padding-right: 24px;
+    }
+
+    button {
+      align-items: center;
+      appearance: none;
+      background: none;
+      border: none;
+      color: #757575;
+      display: flex;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      padding: 0;
+      text-align: left;
+
+      svg {
+        height: 16px;
+        margin-left: 8px;
+        width: 16px;
+      }
+
+      &.selected-header {
+        color: #505050;
+      }
+    }
+  }
+
+  td {
+    border-bottom: 1px #eee solid;
+    line-height: 24px;
+    padding: 24px 12px;
+    padding-bottom: 23px;
+
+    &:first-child {
+      padding-left: 24px;
+    }
+
+    &:last-child {
+      padding-right: 24px;
+    }
+  }
+
+  .participant-row {
+    button {
+      appearance: none;
+      background: none;
+      border: none;
+      display: block;
+      padding: 0;
+
+      > * {
+        display: block;
+        fill: #909090;
+      }
+    }
+  }
+
+  .participant-row-edit {
+    td {
+      padding: 16px 8px;
+      padding-bottom: 15px;
+
+      &:first-child {
+        padding-left: 16px;
+      }
+
+      &:last-child {
+        padding-right: 16px;
+      }
+    }
+  }
+}
+
+.add-new-button {
+  background: #ededed;
+  color: #757575;
+}
